@@ -1,5 +1,4 @@
 import { unstable_cache } from "next/cache";
-import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 let fetchCount = 0;
@@ -23,7 +22,7 @@ export default async function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        {fetchCount}
+        Calls made {fetchCount}
       </main>
     </div>
   );
