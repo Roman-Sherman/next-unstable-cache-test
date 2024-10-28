@@ -17,6 +17,7 @@ const fetchData = cache(
 );
 
 export default async function Home() {
+  fetchCount = 0;
   const p1 = fetchData();
   const p2 = fetchData();
   const p3 = fetchData();
