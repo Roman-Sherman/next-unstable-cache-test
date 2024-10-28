@@ -9,9 +9,9 @@ const fetchData = cache(
       fetchCount++;
       return "hello";
     },
-    ["data"],
+    undefined,
     {
-      revalidate: 60,
+      revalidate: 1,
     }
   )
 );
