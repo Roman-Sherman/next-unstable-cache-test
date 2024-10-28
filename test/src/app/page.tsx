@@ -1,6 +1,5 @@
 import { unstable_cache } from "next/cache";
-import Image from "next/image";
-import { cache } from "react";
+
 export const dynamic = "force-dynamic";
 let fetchCount = 0;
 const fetchData = unstable_cache(
