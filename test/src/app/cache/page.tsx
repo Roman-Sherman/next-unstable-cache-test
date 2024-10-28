@@ -11,7 +11,7 @@ const fetchData = cache(
     },
     ["data"],
     {
-      revalidate: 500,
+      revalidate: 60,
     }
   )
 );

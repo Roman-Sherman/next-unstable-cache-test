@@ -9,7 +9,7 @@ const fetchData = unstable_cache(
   },
   ["data"],
   {
-    revalidate: 500,
+    revalidate: 60,
   }
 );
 
